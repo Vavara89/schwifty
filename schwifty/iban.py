@@ -129,7 +129,7 @@ class IBAN(Base):
 
     def _validate_length(self):
         if self.spec['iban_length'] != self.length:
-            raise ValueError("Invalid IBAN length")
+            raise ValueError("Invalid IBAN length '{}' vs. '{}'".format(self.length, self.spec['iban_length']))
 
     def _validate_format(self):
         if not self.spec['regex'].match(self.bban):
