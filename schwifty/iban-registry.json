@@ -381,7 +381,7 @@
   }, 
   "GB": {
     "iban_spec": "GB2!n4!a6!n8!n", 
-    "iban_length": 22, 
+    "iban_length": 24, 
     "bban_length": 18, 
     "bban_spec": "4!a6!n8!n", 
     "positions": {
